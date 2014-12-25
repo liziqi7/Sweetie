@@ -4,25 +4,19 @@ define(function(require, exports) {
     var navView = B.View.extend({
         el: $("#js-navs"),
         map: {
-            "dingyue": 0,
-            "haojian": 1,
-            "index": 2,
-            "xiaoxi": 3,
-            "wode": 4,
-            "zuzhi": 4
-        },
-        events: {
-            "touchstart .navlist span": "changeNav"
+            "index": 0,
+            "geren": 1,
+            "kefu": 2
         },
         initialize: function() {
             var t = this;
-            t.navs = this.$el.find(".navlist li");
+            t.navs = this.$el.find("li");
             return t;
         },
         initNav: function(m) {
             var t = this,
-                idx;
-            if (idx = this.map[m], idx != undefined) {
+                idx = this.map[m];
+            if (typeof idx != undefined) {
                 this.$el.show();
                 //激活导航
                 t.navs.each(function(i, v) {
@@ -31,19 +25,6 @@ define(function(require, exports) {
             } else {
                 this.$el.hide();
             }
-        },
-        //导航切换
-        changeNav: function(e) {
-            e.preventDefault();
-            var t = this,
-                em = e.currentTarget;
-            var page = $(em).data("page");
-            //激活导航
-            t.navs.each(function(i, v) {
-                $(this).toggleClass("on", v == em.parentElement);
-            });
-            console.log("#" + page + "/index");
-            window.location.hash = "#" + page + "/index";
         }
     });
 
@@ -59,11 +40,6 @@ define(function(require, exports) {
         },
         error: function() {
             this.loadmodel('error', 'index');
-            /*
-            window.setTimeout(function(){
-                location.hash="#";
-            },3000);
-           */
             return false;
         },
         /*初始化,预留做登录用户检测*/
@@ -123,6 +99,7 @@ define(function(require, exports) {
             }
         },
     });
+
     function hideLoad() {
         setTimeout(function() {
             $("#js-loading").hide();
@@ -130,11 +107,11 @@ define(function(require, exports) {
     }
 
     function scrollTop() {
-        setTimeout(function() {
-            window.scrollTo(0, 0);
-        }, 100)
-    }
-    //定义全局变量App
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 100)
+        }
+        //定义全局变量App
     window.App = {
         Models: {},
         Views: {},
