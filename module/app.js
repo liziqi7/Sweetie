@@ -11,6 +11,7 @@ define(function(require, exports) {
         initialize: function() {
             var t = this;
             t.navs = this.$el.find("li");
+            this.bindEvent();
             return t;
         },
         initNav: function(m) {
@@ -25,6 +26,14 @@ define(function(require, exports) {
             } else {
                 this.$el.hide();
             }
+        },
+        bindEvent:function(){
+            $(".js-close").click(function(){
+                var uid=$(this).data("uid");
+                $("#js-pop"+uid).hide();
+                $(document).trigger("closepop"+uid);  
+            });
+            //$(document).one("closepop"+uid,function(){}); 
         }
     });
 
@@ -104,14 +113,14 @@ define(function(require, exports) {
         setTimeout(function() {
             $("#js-loading").hide();
         }, 300);
-    }
+    };
 
     function scrollTop() {
-            setTimeout(function() {
-                window.scrollTo(0, 0);
-            }, 100)
-        }
-        //定义全局变量App
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+        }, 100)
+    };
+    //定义全局变量App
     window.App = {
         Models: {},
         Views: {},
