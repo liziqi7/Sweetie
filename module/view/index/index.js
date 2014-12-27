@@ -2,8 +2,8 @@ define('', '', function(require) {
 	var B = require('backbone');
 
 	var H = require('text!../../../tpl/index/index.html');
-	var slides = require("view/slides/index");
-	var list = require("view/list/index");
+	// var slides = require("view/slides/index");
+	// var list = require("view/list/index");
 
 	var V = B.View.extend({
 		template: H,
@@ -20,6 +20,7 @@ define('', '', function(require) {
 				data = {};
 			var html = _.template(t.template, data);
 			t.$el.show().html(html);
+            Jser.loadimages();
 		}
 	});
 	return function(pars) {

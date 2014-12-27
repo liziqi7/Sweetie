@@ -72,19 +72,13 @@ img{
 ul,ol{
   list-style-type:none;
 }
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
+textarea{
+  background:transparent;
+  border: 0;
+  outline: 0;
   -webkit-appearance: none;
+  padding:0;
 }
-/*.nav:before,.nav:after{
-  content:" ";
-  display:table;
-}
-.nav:after{
-  clear:both;
-}*/
 /*常用属性*/
 .show{
   display: block;
@@ -94,6 +88,19 @@ button {
 }
 .hide{
   display: none;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clean:before,.clean:after{
+  content:" ";
+  display:table;
+}
+.clean:after{
+  clear:both;
 }
 .flex-equal, .flex-center, .justify {
   display: -webkit-box;
@@ -188,11 +195,36 @@ button {
   padding-top:50%;
   font-size: 1em;
 }
+.btn{
+  cursor: pointer;
+  border-radius: 10px;
+  background: #F45355;
+  color: #fff;
+  padding: 10px 8px;
+  font-size: 0.875em;
+}
+.textright{
+  text-align: right;
+}
+.list-loading{
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  color:#40a8cc;
+  font-size:0.875em;
+}
+.loading-icon{
+  display: inline-block;
+  background: url("../images/loading.gif") center no-repeat;
+  width: 64px;
+  height: 10px;
+}
 /*常用属性*/
 
 .wrap{
   width: 100%;
-  height:100%;
+  min-height: 100%;
+  -webkit-overflow-scrolling:touch;
   overflow-x:hidden; 
   position: relative;
 }
@@ -227,7 +259,7 @@ button {
  color: #f45254;
 }
 .page-list{
-  padding-bottom:48px; 
+  padding-bottom:50px; 
 }
 .page-list li{  
   width: 100%;
@@ -257,6 +289,8 @@ button {
 }
 .list-left .heart{
   margin-top: 9px;
+}
+.heart{
   width: 100px;
   height: 14px;
   background: url('../images/heart2.png') 0 0 repeat-x;
@@ -308,36 +342,19 @@ button {
   bottom: 4px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer{
-  position: fixed;
-  bottom:0;
-  left: 0;
-  z-index:99;
-  background-color: #1a242f;
-  width:480px;
-  padding: 0 10px;
-  height:65px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;  
+.btn-back{
+  width: 24px;
+  height: 24px;
 }
+
+
+
+
+
+
+
+
+
 
 
 .header{
@@ -349,6 +366,14 @@ button {
   font-size:1em;
   color:#ffffff;
 }
+.footer{
+  position: fixed;
+  bottom:0;
+  left: 0;
+  z-index:10;
+  width: 100%;
+  height:50px;
+}
 .header .hd-btn{
   position: absolute;
   width: 70px;
@@ -356,6 +381,207 @@ button {
   top:0;
   color:#ffffff; 
 }
+.header .btn-back{
+  position: absolute;
+  color:#ffffff; 
+  left:5px;
+  top:5px;
+  background: url("../images/back.png");
+  background-size: 100% 100%;
+}
+.second-header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.second-wrapper{
+  padding: 35px 0 50px;
+}
+.second-footer{
+  background: #F45355;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+.role-info{
+  height: 150px;
+  position: relative;
+  width: 100%;
+}
+.role-left-pic img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin:10px 0 0 10px;
+}
+.role-right{
+  position: absolute;
+  left: 121px;
+  top: 10px;
+  right: 11px;
+  bottom: 0;
+  height: 100%;
+}
+.role-right p{
+  font-size: 0.75em;
+  color: #898989;
+  line-height: 18px;
+}
+.role-right .name{
+  font-size: 1em;
+  height: 25px;
+  color: #595858;
+}
+.role-right .info {
+  margin-top: 9px;
+  height: 36px;
+  overflow: hidden;
+  width: 100%;
+}
+.role-right .btn-time{
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px 16px;
+  border-radius: 14px;
+}
+.role-top{
+  width: 100%;
+  height: 26px;
+  background: #dcdddd;
+  line-height: 26px;
+  color: #474747;
+  font-size: 0.8em;
+  text-indent: 0.8em;
+}
+.role-top .more{
+  float: right;
+  margin-right: 14px;
+  color: #777777;
+}
+.role-panel{
+  padding: 10px;
+}
+.role-pic li{
+  padding: 0 4px;
+}
+.role-pic img{
+  width: 100%;
+  height: 100%;
+}
+.role-total{
+  padding:7px 0 7px 7px;
+}
+.btn-red{
+  padding:8px 11px;
+  display: inline-block;
+  border-radius: 15px;
+  margin: 3px 2px;
+  font-size: 0.75em;
+}
+.btn-gray{
+  padding:8px 11px;
+  display: inline-block;
+  border-radius: 15px;
+  margin: 3px 2px;
+  background-color: #9fa0a0;
+   font-size: 0.75em;
+}
+.role-price p{
+  color: #777777;
+  font-size: 0.875em;
+  line-height: 21px;
+}
+.role-price p span{
+  float: right;
+}
+.role-comment{
+  padding: 0;
+}
+.role-comment li{
+  min-height: 80px;
+  padding: 10px;
+  color: #777777;
+  font-size: 0.875em;
+  border-bottom: 1px solid #c6c6c6;
+}
+.role-comment li p{
+  line-height: 20px;
+}
+.role-comment-heart{
+  height: 22px;
+}
+
+
+.comment-wrapper{
+
+}
+.comment-area{
+  padding: 30px 0px 30px 10px;
+  color:#777777;
+}
+.comment-area p{
+  height: 36px;
+  color: #474747;
+  font-size: 1em;
+}
+.comment-area .heart{
+  float: left;
+  margin-top: 3px;
+}
+.comment-area-list{
+
+}
+.comment-area-list li{
+  font-size: 0.75em;
+  color:#fff;
+  background-color: #F45355;
+  padding: 10px 12px;
+  float: left;
+  margin: 4px 4px 0 0;
+}
+.comment-area-text{
+  margin:25px 10px 0 0;
+  background-color: #eaeaea;
+  padding: 12px 10px;
+}
+.comment-area-text textarea{
+  width: 100%;
+  height: 142px;
+  font-size: 0.875em;
+  line-height: 18px;
+  color:#777777;
+}
+.comment-area label{
+   font-size: 0.875em;
+ }
+.comment-area .comment-checkbox{
+  margin:18px 0 0 15px; 
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .index-header .hd-btn span{
   display: inline-block;
 }
@@ -417,13 +643,7 @@ button {
   background:url(../images/fenxiang.png) 0 0 no-repeat;
   float: right;
 }
-.header:before,.header:after{
-  content:" ";
-  display:table;
-}
-.header:after{
-  clear:both;
-}
+
 .slides{
   width:480px;
   height:276px;

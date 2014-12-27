@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,minimal-ui">
     <title>APP</title>
     <link rel="stylesheet" href="resource/css/code-index.css"/>
+    <script type="text/javascript" src="module/lib/Jser.js"></script>
     <script type="text/javascript" src="module/lib/sea.js"></script>
     <script type="text/javascript" src="module/lib/seajs-text.js"></script>
     <script type="text/javascript">
@@ -14,7 +15,6 @@
                 //基础库
                 'underscore': 'lib/underscore',
                 'backbone': 'lib/backbone',
-                'Jser': 'lib/Jser',
                 '$': 'lib/jquery'
             }
         });
@@ -30,26 +30,27 @@
 <body>
     <div class="wrap">
         <div id="js-wrap"></div>
-        <ul class="nav flex-equal">
+        <ul class="nav flex-equal hide" id="js-navs">
             <li class="on">
-                <a href="javascript:;" data-page="xiadan">我要下单</a>
+                <a href="#index/index">我要下单</a>
             </li>
             <li>
-                <a href="javascript:;" data-page="geren">个人中心</a>
+                <a href="#geren/index">个人中心</a>
             </li>
             <li>
-                <a href="javascript:;" data-page="kefu">客服电话</a>
+                <a href="#kefu/index">客服电话</a>
             </li>
         </ul>
         <div class="pop loading hide" id="js-loading">
             <div class="load-png">
-                <img src="resource/images/shuxin.gif" style="vertical-align:middle">&nbsp;&nbsp;奋力加载中...</div>
+                <img src="resource/images/shuxin.gif" style="vertical-align:middle">&nbsp;&nbsp;奋力加载中...
+            </div>
         </div>
-        <div class="pop js-pop hide">
+        <div class="pop hide" id="js-pop123456">
             <div class="pop-inner">
                 <div class="pop-msg js-pop-txt">这个是测试的</div>
                 <div class="pop-btn-box flex-equal">
-                    <a href="javascript:;" class="js-close">好</a>
+                    <a href="javascript:;" class="js-close" data-uid="123456">好</a>
                 </div>
             </div>
         </div>

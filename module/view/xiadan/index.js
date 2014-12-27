@@ -1,11 +1,14 @@
 define('', '', function(require) {
 	var B = require('backbone');
 
-	var H = require('text!../../../tpl/zuzhi/index.html');
-	var list = require("view/list/zuzhi");
+	var H = require('text!../../../tpl/xiadan/index.html');
+	// var list = require("view/list/haojian");
 
 	var V = B.View.extend({
 		template: H,
+		events: {
+
+		},
 		initialize: function() {
 			var t = this;
 			t.render();
@@ -16,13 +19,6 @@ define('', '', function(require) {
 				data = {};
 			var html = _.template(t.template, data);
 			t.$el.show().html(html);
-			var h = $("body").height() - $("#js-navs").height();
-			var $List = t.$el.find(".js-list");
-			$List.height(h - $List.offset().top);
-			/*示例化子试图*/
-			t.List = new list({
-				el: t.$el.find(".js-list")
-			});
 		}
 	});
 	return function(pars) {
