@@ -1,0 +1,102 @@
+<div class="wrapper">
+    <div class="scroller">
+        <div class="load pullDown">
+            <span class="iconfont icon-xiangxia"></span>
+        </div>
+        <div class="js-scroller">
+            <ul class="haojian-list js-list-pic">
+                <li class="on">
+                    <div class="hao-pic">
+                        <img src="resource/images/jian1.png"></div>
+                    <div class="hao-explain">
+                        <div class="hao-name">
+                            推荐 <em>一起偶发的风</em>
+                        </div>
+                        <span class="hao-num">
+                            1700 <em></em>
+                        </span>
+                    </div>
+                    <div class="hao-buy">购买</div>
+                </li>
+                <li>
+                    <div class="hao-pic">
+                        <img src="resource/images/jian2.png"></div>
+                    <div class="hao-explain">
+                        <div class="hao-name">
+                            推荐
+                            <em>一起偶发的风</em>
+                        </div>
+                        <span class="hao-num">
+                            1700
+                            <em></em>
+                        </span>
+                    </div>
+                    <div class="hao-buy">购买</div>
+                </li>
+                 <li>
+                    <div class="hao-pic">
+                        <img src="resource/images/jian3.png"></div>
+                    <div class="hao-explain">
+                        <div class="hao-name">
+                            推荐
+                            <em>一起偶发的风</em>
+                        </div>
+                        <span class="hao-num">
+                            1700
+                            <em></em>
+                        </span>
+                    </div>
+                    <div class="hao-buy">购买</div>
+                </li>
+                 <li>
+                    <div class="hao-pic">
+                        <img src="resource/images/jian4.png"></div>
+                    <div class="hao-explain">
+                        <div class="hao-name">
+                            推荐
+                            <em>一起偶发的风</em>
+                        </div>
+                        <span class="hao-num">
+                            1700
+                            <em></em>
+                        </span>
+                    </div>
+                    <div class="hao-buy">购买</div>
+                </li>
+                 <li>
+                    <div class="hao-pic">
+                        <img src="resource/images/jian5.png"></div>
+                    <div class="hao-explain">
+                        <div class="hao-name">
+                            推荐
+                            <em>一起偶发的风</em>
+                        </div>
+                        <span class="hao-num">
+                            1700
+                            <em></em>
+                        </span>
+                    </div>
+                    <div class="hao-buy">购买</div>
+                </li>
+                 <li>
+                    <div class="hao-pic">
+                        <img src="resource/images/jian6.png"></div>
+                    <div class="hao-explain">
+                        <div class="hao-name">
+                            推荐
+                            <em>一起偶发的风</em>
+                        </div>
+                        <span class="hao-num">
+                            1700
+                            <em></em>
+                        </span>
+                    </div>
+                    <div class="hao-buy">购买</div>
+                </li>
+            </ul>
+        </div>
+        <div class="load pullUp">
+            <span class="iconfont icon-xiangshang"></span>
+        </div>
+    </div>
+</div>

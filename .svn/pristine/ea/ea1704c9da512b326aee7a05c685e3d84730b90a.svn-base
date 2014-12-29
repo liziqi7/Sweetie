@@ -1,0 +1,46 @@
+<div class="header second-header">
+	<a href="javascript:;" class="btn-back js-back"></a>
+	李莫愁的美容作品
+</div>
+<div class="second-wrapper works-wrapper">
+	<ul class="works-area clean">
+		<li>
+			<a href="#anli/index">
+				<img src="resource/images/loadimg.png" data-src="resource/images/pic1.png"/>
+				<p>中分小短寸</p>
+			</a>
+		</li>
+		<li>
+			<img src="resource/images/pic2.png" />
+			<p>中分小短寸</p>
+		</li>
+		<li>
+			<img src="resource/images/pic3.png" />
+			<p>中分小短寸</p>
+		</li>
+		<li>
+			<img src="resource/images/pic1.png" />
+			<p>中分小短寸</p>
+		</li>
+		<li>
+			<img src="resource/images/pic1.png" />
+			<p>中分小短寸</p>
+		</li>
+		<li>
+			<img src="resource/images/pic1.png" />
+			<p>中分小短寸</p>
+		</li>
+		<li>
+			<img src="resource/images/pic1.png" />
+			<p>中分小短寸</p>
+		</li>
+		<li>
+			<img src="resource/images/pic1.png" />
+			<p>中分小短寸</p>
+		</li>
+		<li>
+			<img src="resource/images/pic1.png" />
+			<p>中分小短寸</p>
+		</li>
+	</ul>
+</div>

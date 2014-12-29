@@ -1,0 +1,12 @@
+<div class="header second-header">
+	<a href="javascript:;" class="btn-back js-back"></a>
+	李莫愁的美容作品
+</div>
+<div class="second-wrapper anli-wrapper">
+	<div class="anli-area"><img src="resource/images/loadimg.png" data-src="resource/images/pic4.png"/><div class="anli-info">
+			<p>造型名称</p>
+			<p>造型说明： 这是一只美丽而动人的狗狗，中分烫染，长发飘飘，可以及腰。这是一只美丽而动人的狗狗，中分烫染，长发飘飘，可以及腰。</p>
+		</div>
+	</div>
+	<a class="btn btn-footer" href="#zhifu/index">约TA</a>
+</div>

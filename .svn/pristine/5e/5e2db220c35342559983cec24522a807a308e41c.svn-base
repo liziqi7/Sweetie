@@ -1,0 +1,9 @@
+<div class="header second-header">
+	<a href="javascript:;" class="btn-back js-back"></a>
+	支付
+</div>
+<div class="second-wrapper pay-wrapper">
+	<div class="pay-ipt"><label class="pay-label"><input type="number" value=""/>元</label></div>	
+	<a href="javascript:;" class="btn btn-pay btn-weixinpay">微信支付</a>
+	<a href="javascript:;" class="btn btn-pay">我已线下支付</a>
+</div>

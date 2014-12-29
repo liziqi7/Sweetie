@@ -1,0 +1,39 @@
+<div class="wrapper">
+    <div class="scroller">
+        <div class="js-scroller">
+            <div class="me-header">
+                <div class="me-header-img" style="background-image:url('resource/images/me.png')"></div>
+                <div class="me-introduce">
+                    <p class="me-name">Rain xieyu</p>
+                    <p class="me-name2">Rain</p>
+                </div>
+            </div>
+            <div class="me-card-box">
+                <a href="javascript:;" class="me-card me-card-blue">2,719</a>
+                <a href="#zuzhi/index" class="me-card me-card-yellow">5,386</a>
+                <a href="javascript:;" class="me-card me-card-green">24,953</a>
+            </div>
+            <ul class="me-list">
+                <li>
+                    <div class="me-label me-dingyue">我的订阅</div>
+                    <div class="me-num">777</div>
+                </li>
+                <li>
+                    <div class="me-label me-fujin">附近的人</div>
+                    <div class="me-num">13</div>
+                </li>
+                <li>
+                    <div class="me-label me-set">设置</div>
+                    <div class="me-num">284</div>
+                </li>
+                <li>
+                    <div class="me-label me-pingtai">平台绑定</div>
+                    <div class="me-num">6</div>
+                </li>
+                <li>
+                    <div class="me-label me-more">More</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

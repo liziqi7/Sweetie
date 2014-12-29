@@ -1,0 +1,41 @@
+<div class="slides">
+    <ul class="slides-img">
+        <li>
+            <a href="javascript:;">
+                <img src="resource/images/pic.png" data-src="resource/images/slide1.png" alt=""/>
+            </a>
+            <!-- <span class="slides-txt"><div class="bg"></div><div class="txt"></div></span> -->
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="resource/images/pic.png" data-src="resource/images/slide2.png" alt=""/>
+            </a>
+            <!-- <span class="slides-txt"><div class="bg"></div><div class="txt"></div></span> -->
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="resource/images/pic.png"  data-src="resource/images/slide3.png" alt=""/>
+            </a>
+            <!-- <span class="slides-txt"><div class="bg"></div><div class="txt"></div></span> -->
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="resource/images/pic.png"  data-src="resource/images/slide4.png" alt=""/>
+            </a>
+            <!-- <span class="slides-txt"><div class="bg"></div><div class="txt"></div></span> -->
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="resource/images/pic.png"  data-src="resource/images/slide5.png" alt=""/>
+            </a>
+            <!-- <span class="slides-txt"><div class="bg"></div><div class="txt"></div></span> -->
+        </li>
+    </ul>
+    <ul class="slides-dots">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>

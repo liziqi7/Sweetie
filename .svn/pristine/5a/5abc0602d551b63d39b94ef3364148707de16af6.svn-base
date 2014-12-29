@@ -1,0 +1,109 @@
+<div class="wrapper">
+    <div class="scroller">
+        <div class="js-scroller js-xiaoxi-scroller">
+            <ul class="list-pic xiaoxi-list-pic on">
+                <li>
+                    <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+                <li>                    
+                    <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+                <li>                    
+                   <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+                <li>                    
+                    <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+                <li>                    
+                   <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+                <li>                    
+                   <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+                <li>                    
+                    <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+                <li>                    
+                    <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>有奖问答</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>亲爱的用户，为了更好的为您提供帮助和服务，我们诚邀您 参与本次调研问卷</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-pic xiaoxi-list-pic">
+                <li>
+                    <a href="javascript:;" class="list-a portrait-frame" style="background-image:url('resource/images/portrait.png')"></a>
+                    <div class="portrait-explain">
+                        <div class="arrow-left"></div>
+                        <div>
+                            <span>私信</span>
+                            <span class="portrait-time">09-19 00:23</span>
+                        </div>
+                        <p>私信 今天天气很好哈</p>
+                    </div>
+                </li>               
+            </ul>
+        </div>
+    </div>
+</div>
