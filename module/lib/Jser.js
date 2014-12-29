@@ -1,4 +1,13 @@
 window.Jser = {
+    _guid: 1,
+    /**
+    获取唯一GUID
+    * @return {Number} 返回唯一GUID
+    * @static
+    */
+    getGUID: function() {
+        return Jser._guid++;
+    },
     loadimages: function(el) {
         el = el || "body";
         var lazy = $(el).find("[data-src]");
@@ -70,6 +79,20 @@ window.Jser = {
                     }
                 }
             });
+        });
+    },
+    alert: function(txt, callback) {
+        var $pop = $("#js-pop-tpl").find(".pop").clone();
+        var uid = Jser.getGUID();
+        $pop.find(".js-pop-txt").text(txt);
+        $pop.find(".js-close").attr("data-uid", uid);
+        $pop.attr("id", "js-pop" + uid);
+        $(".js-wrapper").append($pop);
+        $(".js-close").one('click',function() {
+            var uid = $(this).data("uid");
+            $("#js-pop" + uid).remove();
+            $(document).trigger("closepop" + uid);
+            callback&&callback();
         });
     }
 }

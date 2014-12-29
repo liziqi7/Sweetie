@@ -68,10 +68,13 @@ a:hover {
 em{font-style: normal;}
 img{
   border:none;
+  vertical-align:top;
 }
 ul,ol{
   list-style-type:none;
 }
+input[type="text"],
+input[type="number"],
 textarea{
   background:transparent;
   border: 0;
@@ -80,14 +83,8 @@ textarea{
   padding:0;
 }
 /*常用属性*/
-.show{
-  display: block;
-}
 .showInlineBlock{
   display: inline-block;
-}
-.hide{
-  display: none;
 }
 .left{
   float: left;
@@ -138,7 +135,7 @@ textarea{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); 
+  background-color: rgba(0,0,0,0.7); 
   z-index: 100; 
 }
 .pop-inner{
@@ -219,6 +216,39 @@ textarea{
   width: 64px;
   height: 10px;
 }
+.show{
+  display: block;
+} 
+.hide{
+  display: none;
+}
+.vishide{
+  visibility: hidden;
+}
+.vishow{
+  visibility: visible;
+}
+.totop{
+  background: url("../images/totop.png") no-repeat;
+  background-size: 100% 100%;
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+.btn-footer{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  border-radius: 0;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight:bold;
+}
 /*常用属性*/
 
 .wrap{
@@ -283,7 +313,6 @@ textarea{
 }
 .list-left img{
   border-radius: 50%;
-  height: 90px;
   width: 90px;
   margin:10px 0 0 5px;
 }
@@ -347,16 +376,6 @@ textarea{
   height: 24px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .header{
   width:100%;
   height:35px;
@@ -393,6 +412,7 @@ textarea{
   position:fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 9;
 }
 .second-wrapper{
@@ -405,6 +425,7 @@ textarea{
   text-align: center;
   line-height: 50px;
   color: #fff;
+  display: inline-block;
 }
 
 .role-info{
@@ -414,7 +435,6 @@ textarea{
 }
 .role-left-pic img{
   border-radius: 50%;
-  height: 100px;
   width: 100px;
   margin:10px 0 0 10px;
 }
@@ -472,7 +492,6 @@ textarea{
 }
 .role-pic img{
   width: 100%;
-  height: 100%;
 }
 .role-total{
   padding:7px 0 7px 7px;
@@ -511,7 +530,7 @@ textarea{
   border-bottom: 1px solid #c6c6c6;
 }
 .role-comment li p{
-  line-height: 20px;
+  line-height: 22px;
 }
 .role-comment-heart{
   height: 22px;
@@ -545,6 +564,9 @@ textarea{
   float: left;
   margin: 4px 4px 0 0;
 }
+.comment-bad-list li{
+  background-color: #9fa0a0;
+}
 .comment-area-text{
   margin:25px 10px 0 0;
   background-color: #eaeaea;
@@ -556,6 +578,7 @@ textarea{
   font-size: 0.875em;
   line-height: 18px;
   color:#777777;
+  overflow-x:auto; 
 }
 .comment-area label{
    font-size: 0.875em;
@@ -564,6 +587,192 @@ textarea{
   margin:18px 0 0 15px; 
   display: inline-block;
 }
+
+.comment-btn{
+  width: 70%;
+  border-radius: 18px;
+  float: right;
+  margin: 10px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  max-width: 300px;
+}
+.pay-wrapper{
+  padding: 85px 10px
+}
+.pay-ipt{
+  width: 100%;
+  height: 40px;
+  background-color: #eaeaea;
+  color: #777777;
+  padding: 10px;
+}
+.pay-label{
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+.pay-label input{
+  width: 90%;
+  text-align: right;
+  padding-right: 5px;  
+  font-size: 1em;
+  height: 20px;
+}
+.btn-pay{
+  width: 100%;
+  padding: 0;
+  font-size: 1.375em;
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  margin-top:20px;
+  font-weight: bold;
+}
+.btn-weixinpay{
+  background-color: #22ac38;
+}
+
+.works-area{
+  margin: 10px;
+}
+.works-area li{
+  padding:4px; 
+  width: 50%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.works-area li img{
+  width: 100%;
+  border-radius: 4px;
+}
+.works-area li p{
+  font-size: 0.875em;
+  width: 100%;
+  overflow: hidden;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  /*background-color:rgba(244,83,85,0.5);*/
+  font-weight: bold;
+}
+.anli-wrapper{
+  padding-bottom: 0px;
+}
+.anli-area{
+  width: 100%;
+  min-height: 320px;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.anli-area img{
+  width: 100%;
+}
+.anli-info{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  padding: 10px;
+}
+.anli-info p{
+  font-size: 0.875em;
+  line-height: 20px;
+}
+
+.geren-list li{
+  border-bottom: 1px solid #DCDDDD; 
+}
+.geren-list li a{
+  height: 60px; 
+  line-height: 60px;
+  color: #777777;
+  display: inline-block;
+  width: 100%;
+  text-indent: 111px;
+  background:url("../images/icon3.png") 90% center no-repeat;
+  background-size: 11px 19px;
+}
+.geren-list li:nth-child(1){
+  background: url("../images/icon1.png") 34px center no-repeat;
+  background-size: 32px 32px;
+}
+.geren-list li:nth-child(2){
+  background: url("../images/icon2.png") 34px center no-repeat;
+  background-size: 32px 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px){
+  
+}
+@media screen and (min-width: 768px){
+  body{
+    font-size:24px;
+  }
+  .works-area li{
+    width: 33.33%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

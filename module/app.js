@@ -19,6 +19,7 @@ define(function(require, exports) {
                 idx = this.map[m];
             if (typeof idx != "undefined") {
                 this.$el.show();
+                this.$el.addClass("vishow");
                 //激活导航
                 t.navs.each(function(i, v) {
                     $(this).toggleClass("on", i == idx);
@@ -27,13 +28,8 @@ define(function(require, exports) {
                 this.$el.hide();
             }
         },
-        bindEvent:function(){
-            $(".js-close").click(function(){
-                var uid=$(this).data("uid");
-                $("#js-pop"+uid).hide();
-                $(document).trigger("closepop"+uid);  
-            });
-            //$(document).one("closepop"+uid,function(){}); 
+        bindEvent: function() {
+           
         }
     });
 
